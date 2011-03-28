@@ -1,0 +1,17 @@
+A Ruby class that implements a letter-based grading
+
+system (A+, A, A-, ...).  The class should be able to naturally
+
+sort by the value of grade (i.e., A+ > A > A-).  The class
+
+should be constructed with a string-value for the grade.
+
+ 
+
+a_plus = Grade.new("A+")
+
+a      = Grade.new("A")
+
+a_plus > a       # should return true
+
+[a_plus, a].sort # should return [a, a_plus]
